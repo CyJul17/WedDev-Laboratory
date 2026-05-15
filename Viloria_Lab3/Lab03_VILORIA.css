@@ -1,0 +1,57 @@
+/* The background pic */
+body { 
+  background-image: url(ine.png);
+  background-size: 1366px 768px;
+}
+/* enclose the form */
+.box {
+  background-color: white;
+  padding: 20px;
+  margin-top: 10px;
+  width: 200px;
+  height: 450px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.design-button {
+
+  background-color: red;
+  color: pink;
+  border-radius: 20px ;
+  width: 200px;
+  height: 30px;
+}
+
+h1 {
+  font-family:'Courier New', cursive, monospace;
+  font-weight: bold;
+  color: #960018;
+}
+
+.label-font {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 17px;
+}
+
+.design-input {
+  padding: 8px, 0;
+  background-color: white;
+  display: inline-block;
+  border: 2px, solid;
+  box-sizing: border-box;
+  border-radius: 8px;
+  border-color: red;
+
+}
+
+.border-title {
+  background-color: pink;
+  border: 4px solid #bb0a1e;
+  padding: 2px;
+  border-radius: 10px;
+  display: flexbox;
+  width: 225px;
+  height: 110px ;
+  box-sizing: border-box;
+}

@@ -1,0 +1,88 @@
+h1 {
+
+    color: white;
+    text-align: center;
+}
+
+table {
+
+    
+    text-align: center;
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 80%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+}
+
+tbody {
+
+    border: white solid 1px;
+    border-left: none;
+    border-right: none;
+    border-top:none;
+}
+
+th {
+
+    color: white;
+    background-color: #228B22;
+    padding: 12px;
+}
+
+td { 
+
+    padding: 10px 15px;
+    border-bottom: 1px solid white;
+}
+
+tr:last-child td {
+
+    border-bottom: none;
+}
+
+button {
+
+    padding: 12px;
+    color: white;
+    font-weight: bold;
+    background-color: #228B22;
+    border: none;
+    border-radius: 12px;
+    font-family: Gill Sans;
+}
+
+#the-form {
+    
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #1F1B24;
+    margin: 10px;
+    gap: 10px;
+}
+
+body {
+
+
+    justify-content: center;
+    padding: 20px;
+    background-color: #121212;
+}
+
+input {
+
+    font-size: 13px;
+    color: black;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+input:focus {
+
+    outline-color:#228B22;
+    outline-style: solid;
+    outline-width: 3px;
+}

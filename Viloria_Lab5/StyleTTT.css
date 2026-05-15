@@ -1,0 +1,203 @@
+body {
+    background-color: #141821;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    margin:0;
+}
+
+.arrangement {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 110px);
+    gap: 25px;
+    margin: 30px auto;
+}
+.title {
+    text-align: center;
+    border: 3px solid cyan;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #90d4ff;
+    font-size: 67px;
+    text-transform: uppercase;
+    margin-bottom: 80px;
+}
+
+.box {
+    background-color: cyan;
+    color:#00035b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    border-radius: 20px;
+
+    box-shadow: 0 8px 0 #1f4949;
+    transition: all 0.2s ease; 
+}
+
+.box:hover {
+    background-color: #0084ff; 
+    transform: translateY(-2px); 
+    box-shadow: 0 10px 0 #1f4949; 
+}
+
+.box:active{
+    .box:active {
+    transform: translateY(4px); 
+    box-shadow: 0 2px 0 #008b8b; 
+}
+}
+
+
+/*Button design from the restart button*/
+#resgame {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background: #183153;
+    font-family: "Montserrat", sans-serif;
+    box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    cursor: pointer;
+    border: none;
+}
+
+#resgame:after {
+    content: " ";
+    width: 0%;
+    height: 100%;
+    background: cyan;
+    position: absolute;
+    transition: all 0.4s ease-in-out;
+    right: 0;
+}   
+
+#resgame:hover::after {
+    right: auto;
+    left: 0;
+    width: 100%;
+}
+
+#resgame span{
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    padding: 18px 25px;
+    color: #fff;
+    font-size: 1.125em;
+    font-weight: 700;
+    letter-spacing: 0.3em;
+    z-index: 20;
+    transition: all 0.3s ease-in-out;
+}
+
+#resgame:hover span {
+    color: black;
+    animation: scaleUp 0.3s ease-in-out;
+
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0.95);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+.game {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+#winnerPop {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: #141821 !important;
+    color: #90d4ff;
+    font-size: 3rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    gap: 20px;
+
+    box-shadow: inset 0 0 0 20px #90d4ff;
+    border: 15px solid #90d4ff;
+    box-sizing: border-box; 
+    border-radius: 20px;
+
+    background: rgba(20, 24, 33, 0.85); 
+    backdrop-filter: blur(10px);
+    border: 10px solid #90d4ff;
+}
+
+/*new game button design*/
+#restart {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background: cyan;
+    font-family: "Montserrat", sans-serif;
+    box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    cursor: pointer;
+    border: none;
+}
+
+#restart:after {
+    content: " ";
+    width: 0%;
+    height: 100%;
+    background: #183153;
+    position: absolute;
+    transition: all 0.4s ease-in-out;
+    right: 0;
+}   
+
+#restart:hover::after {
+    right: auto;
+    left: 0;
+    width: 100%;
+}
+
+#restart span{
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    padding: 18px 25px;
+    color: black;
+    font-size: 1.125em;
+    font-weight: 700;
+    letter-spacing: 0.3em;
+    z-index: 20;
+    transition: all 0.3s ease-in-out;
+}
+
+#restart:hover span {
+    color: cyan;
+    animation: scaleUp 0.3s ease-in-out;
+
+}
+
+#winnerTxt {
+    font-size: 8vmin;
+}

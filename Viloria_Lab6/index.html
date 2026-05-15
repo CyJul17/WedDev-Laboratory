@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html> 
+    <head>
+
+        <title>Inventory Management System</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        
+        <h1>Inventory Management System</h1>
+        <form id="the-form">
+            <input type="text" id="name" placeholder="Product Name" required />
+            <input type="text" id="price" placeholder="Price" required />
+            <input type="text" id="stock" placeholder="Stock Quantity" required />
+            <button id="button">Add Product</button>
+        </form>
+        <table id="Inventory">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Item Name</th>
+                <th>Price</th>
+                <th>Stock</th>
+           </tr>
+        </thead>
+            <tbody id="tableBody">
+         </tbody>
+            </table>
+            <script src="script.js"></script>
+    </body>
+</html>
